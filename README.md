@@ -55,6 +55,7 @@ Publish the website in the given URL.
 </body>
 </html>
 veiws.py
+
 from django.shortcuts import render
 
 def calculate_bmi(request):
@@ -73,6 +74,7 @@ def calculate_bmi(request):
     return render(request, "bmiapp/template.html", {"BMI": bmi})
 
 urls.py
+
 from django.contrib import admin
 from django.urls import path
 from bmiapp import views
